@@ -6,11 +6,11 @@
     <Border StrokeThickness="2" StrokeDashArray="3">
         
     <Grid Margin="10" RowDefinitions="*,2*,2*,*" ColumnDefinitions="*,2*,*">
-            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="SkyBlue" WidthRequest="350"/>
+            <Border Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="SkyBlue" WidthRequest="350"/>
             <Border Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="4" BackgroundColor="Red" WidthRequest="350"/>
-            <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Orchid" WidthRequest="350"/>
-        
-        
+            <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Aquamarine" WidthRequest="350"/>
+
+            
 
     </Grid>
     </Border>
