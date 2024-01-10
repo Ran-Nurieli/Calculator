@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewProject.GridExample"
+             Title="GridExample">
+    <Border StrokeThickness="2" StrokeDashArray="3">
+        
+    <Grid Margin="10" RowDefinitions="*,2*,2*,*" ColumnDefinitions="*,2*,*">
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="SkyBlue" WidthRequest="350"/>
+            <Border Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="4" BackgroundColor="Red" WidthRequest="350"/>
+            <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Orchid" WidthRequest="350"/>
+        
+        
+
+    </Grid>
+    </Border>
+
+</ContentPage>
