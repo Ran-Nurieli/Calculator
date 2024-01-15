@@ -1,31 +1,123 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NewProject.GridExample"
-             Title="GridExample">
-    <Border StrokeThickness="2" StrokeDashArray="3">
-        <Grid Margin="10" RowDefinitions="*,3*,*">
-            <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="enter text" BackgroundColor="Aqua"></Label>
-                <Grid Grid.Row="1" RowDefinitions="*,*,*" ColumnDefinitions="*,*,*,0.5*">
-                    <Button Text="1" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="2" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="3" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="4" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="5" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="6" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="7" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="8" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="9" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="+" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="-" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    <Button Text="x" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
-                    
-                </Grid>
+<ContentPage
+    x:Class="NewProject.GridExample"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GridExample">
 
-            <Button Grid.Row="2" Text="=" BackgroundColor="Gray"></Button>
+    <Grid
+        Margin="10"
+        ColumnSpacing="2"
+        RowDefinitions="*,3*,*"
+        RowSpacing="2">
+        <Label
+            x:Name="lbl_text"
+            Grid.Row="0"
+            BackgroundColor="LightGray"
+            HorizontalTextAlignment="Center"
+            Text="enter text"
+            VerticalTextAlignment="Center" />
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="*,*,*,*"
+            ColumnSpacing="2"
+            RowDefinitions="*,*,*"
+            RowSpacing="2">
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="1"
+                class="btn" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="2"
+                class="btn" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="3"
+                class="btn" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="4"
+                class="btn" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="5"
+                class="btn" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="6"
+                class="btn" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="7"
+                class="btn" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="8"
+                class="btn" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="9"
+                class="btn" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="3"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="+"
+                class="btn" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="-"
+                class="btn" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="3"
+                BackgroundColor="Coral"
+                Clicked="Print"
+                Text="0"
+                class="btn" />
 
         </Grid>
+        <Button
+            Grid.Row="2"
+            BackgroundColor="Blue"
+            Clicked="Print"
+            Text="=" />
 
-    </Border>
+
+    </Grid>
+
+
 
 </ContentPage>
