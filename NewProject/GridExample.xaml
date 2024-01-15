@@ -4,15 +4,28 @@
              x:Class="NewProject.GridExample"
              Title="GridExample">
     <Border StrokeThickness="2" StrokeDashArray="3">
-        
-    <Grid Margin="10" RowDefinitions="*,2*,2*,*" ColumnDefinitions="*,2*,*">
-            <Border Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="SkyBlue" WidthRequest="350"/>
-            <Border Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="4" BackgroundColor="Red" WidthRequest="350"/>
-            <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Aquamarine" WidthRequest="350"/>
+        <Grid Margin="10" RowDefinitions="*,3*,*">
+            <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="enter text" BackgroundColor="Aqua"></Label>
+                <Grid Grid.Row="1" RowDefinitions="*,*,*" ColumnDefinitions="*,*,*,0.5*">
+                    <Button Text="1" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="2" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="3" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="4" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="5" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="6" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="7" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="8" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="9" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="+" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="-" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    <Button Text="x" BackgroundColor="Coral" Grid.Row="0" Grid.Column="0"></Button>
+                    
+                </Grid>
 
-            
+            <Button Grid.Row="2" Text="=" BackgroundColor="Gray"></Button>
 
-    </Grid>
+        </Grid>
+
     </Border>
 
 </ContentPage>
